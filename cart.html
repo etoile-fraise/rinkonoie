@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <div id="myBar" class="screen">
+            <a href="javascript:void(0)" class="btn" onclick="closeNav()"> x </a>
+
+        <div class="header">
+            <nav class="header-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="acce.html">Accessories</a></li>
+                    <li><a href="life.html">Inspiration</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="smedia">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+
+    </header>
+    
+    <section> 
+        <div class="header_top">
+            <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>
+            <div class="title"><h3>& C R O C H E T</h3></div>
+            <span class="cartIcon"><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></span>
+        </div>
+    </section> 
+    
+    <div class="shopping">
+        <div class="titleShop">
+            BASKET
+        </div>
+        <div class="shopping-cart">
+            <div class="itemCart">
+                <div class="buttons">
+                    <span class="delate-btn">-</span>
+                    <span class="like-btn"><i class="fas fa-heart"></i></span>
+                </div>
+            </div>
+            
+            <div class="inCart">
+                <img src="images/pinkyarn2.jpeg" alt="">
+            </div>
+            
+            <div class="description">
+                <span>Yarn</span>
+                <span>Pink</span>
+            </div>
+            
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <span>-</span>
+                </button>
+                <input type="text" name="name" value="0" class="number">
+                <button class="plus-btn" type="button" name="button">
+                    <span>+</span>
+                </button>
+            </div>
+            
+            <div class="total-price">700YEN</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h3>& C R O C H E T</h3>
+            <div class="footer_main">
+                <nav class="footer_links fc">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="works.html">Works</a></li>
+                        <li><a href="acce.html">Accessories</a></li>
+                        <li><a href="life.html">Inspiration</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="smedia fc">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            
+            <div class="footer_bottom">
+                <p>Copyright 2021</p>
+            </div>
+        </div>
+
+        <button id="btn">^</button>
+    </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="assets/js/javascript.js"></script>
+        <script src="https://kit.fontawesome.com/8db776b08b.js" crossorigin="anonymous"></script>
+    </body>
+</html>

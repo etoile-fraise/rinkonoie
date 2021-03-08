@@ -1,0 +1,141 @@
+
+
+
+
+/* shopping */
+.shopping{
+    width: 100%;
+    background-color: #ffffff;
+    /* box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.10); */
+    border-radius: 5px;
+}
+.shopping-cart{
+    width: 70%;
+    height:100px;
+    max-width: 80px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titleShop{
+    height: 60px;
+    border-bottom: 1px solid #707070;
+    padding: 20px 30px;
+    color: #707070;
+    font-size: 18px;
+    font-weight: 40px;
+    text-align: center;
+}
+
+.itemCart{
+    padding: 20px 30px;
+    height: 120px;
+    display: flex;
+}
+
+.itemCart:nth-child(3){
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+}
+
+.buttons{
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+}
+.delete-btn,
+.like-btn{
+    display: inline-block;
+    cursor: pointer;
+}
+.delete-btn{
+    width: 18px;
+    height: 17px;
+}
+.like-btn{
+    position: absolute;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.is-active{
+    animation-name: animate;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(28);
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate{
+    0% {background-position: left;}
+    50% {background-position: right;}
+    100% {background-position: right;}
+}
+
+.inCart{
+    margin-right: 80px;
+}
+.inCart img{
+    width: 100px;
+    height: 90px;
+}
+
+.description{
+    margin-right: 70px;
+    align-items: center;
+}
+
+.description span{
+    display: block;
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+}
+
+.description span:first-child{
+    margin-bottom: 5px;
+}
+
+.description span:last-child{
+    font-weight: 300;
+    margin-top: 8px;
+    color: #70707050;
+}
+
+.quantity{
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+}
+.quantity input{
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #707070;
+    font-weight: 300;
+}
+button[class*=btn]{
+    width: 30px;
+    height: 30px;
+    background-color: #F8EFE4;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.minus-btn img{margin-bottom: 3px;}
+.plus-btn img{margin-top: 2px;}
+button:focus,
+input:focus{outline: 0;}
+
+.total-price{
+    width: 8px;
+    text-align: center;
+    font-size: 16px;
+    color: #707070;
+    font-weight: 300;
+}
+
